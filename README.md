@@ -5,15 +5,19 @@ using Sequelize.
 
 ## Getting started
 
-Download starter. `cd` into __server__ folder, and install dependencies using
-`npm install`.
+Download starter. 
 
-Create a __.env__ file modeled after __.env.example__, specifying the location
-of the database to be created.
+Execute the __setup-commands.sh__ script from the root directory of this
+practice. 
 
-Use `sequelize-cli` to run the migration and seeder files provided. Use
-`sqlite3` to check that the `Cats`, `Toys`, and `CatToys` tables exist in your
-database and you have seed data present. These tables will be very large!
+```shell
+sh setup-commands.sh
+```
+
+View the contents of the script to see the commands that are executed. View the
+results in the terminal to confirm that setup was successful and the `Cats`,
+`Toys`, and `CatToys` tables exist in your database and you have seed data
+present. These tables will be very large!
 
 Explore the models and their associations in the __db/models__ directory. The
 `Cat` and `Toy` models have a many-to-many relationship, and are joined by the
@@ -197,4 +201,5 @@ values displayed at the bottom of the page:
 You are now able to write Sequelize queries to get aggregate data values and
 display those values in your endpoints.
 
-[`toJSON()` Sequelize method]: https://sequelize.org/master/manual/model-instances.html#note--logging-instances
+[`toJSON()` Sequelize method]:
+    https://sequelize.org/master/manual/model-instances.html#note--logging-instances
